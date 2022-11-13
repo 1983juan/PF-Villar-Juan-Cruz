@@ -1,0 +1,190 @@
+@use "../base/globales";
+@use "../base/variable";
+
+#footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "p"
+    "buttom";
+    background-color: map-get(globales.$backgrand, bg-color );
+    background-image: map-get(globales.$backgrand, bg-image );
+    width: 100vw;
+    margin: 0px;
+    padding: 0%;
+    .footer__p{
+        grid-area: p;
+        width: 100vw;
+        max-width: 768px;
+        min-width: 320px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        p{
+            text-align: variable.$center;
+            font-size: (variable.$tamanoh)/3;
+            font-family: variable.$tipoletra;
+            color: variable.$colorletra;
+            padding: 10px;        
+        }
+    }
+    .footer__div{
+        grid-area: buttom;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "inicio"
+        "redes";
+        background-image: map-get(globales.$backgrand, bg-footer );
+        background-size: cover;
+        opacity: 75%;
+        width: 100vw;
+        max-width: 768px;
+        min-width: 320px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box; 
+        border-radius: map-get(globales.$backgrand, b-radius )*20;
+        .car{
+            grid-area: inicio;
+            text-align: center;
+            width: 100vw;
+            max-width: 768px;
+            min-width: 320px;
+            button{
+                font-size: (variable.$tamanoh)/3;
+                font-family: 'Fuzzy Bubbles', cursive;
+                border-bottom: 8px solid rgb(56, 101, 116);
+                border-radius: 5%;
+                margin: 10px;
+                a{
+                    justify-self: center;
+                    font-family: variable.$tipoletra;              
+                    text-align: center;
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        font-size: 20px;
+                    }
+                }
+            }         
+        }
+        .footer__div__a {
+            grid-area: redes;
+            text-align: center;
+            width: 100vw;
+            max-width: 768px;
+            min-width: 320px;
+            ul li{
+                list-style: none;
+                padding: 2px;
+                
+                a img{
+                    overflow: hidden;
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+//*  tablet - desktop*//
+@media (min-width: 768px) {    
+    #footer {
+        height: auto;
+        width: 100vw;
+        max-width: 1200px;
+        min-width: 768px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        background-color: black;
+        .footer__p{
+            justify-self: center;
+            align-self: center;
+            p{
+             text-align: center;   
+            }
+        }
+        .footer__div{
+            display: flex;
+            width: 100vw;
+            height:auto;
+            justify-self: center;
+            align-self: center;
+            .car{
+                display: flex;
+                justify-content:right;
+                width: 25vw;
+                height: 5vw;
+                button {
+                    text-align: center;
+                    margin-top: 10px;
+                    width: 140px;
+                    height: 40px;
+                    font-size: (variable.$tamanoh)/3;
+                    font-family: variable.$tipoletra;
+                    border-bottom: map-get(globales.$boton , border-bottom );
+                    border-radius: map-get(globales.$boton , border-radis);
+                    a{
+                    font-size: 20px;
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        color: white;
+                        font-size: 25px;
+                    }
+                    }
+                }
+            }
+            .footer__div__a{
+                width: 20vw;
+                height: 20vw;
+                ul li {
+                    float: right;
+                    display: flex;
+                    align-self: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                    width: 50px;
+                    -webkit-animation: rotate-diagonal-1 1.5s linear both;
+                        animation: rotate-diagonal-1 1.5s linear both;
+                      }
+                      @-webkit-keyframes rotate-diagonal-1 {
+                        0% {
+                          -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                                  transform: rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                          -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                                  transform: rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                          -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                                  transform: rotate3d(1, 1, 0, -360deg);
+                        }
+                      }
+                      @keyframes rotate-diagonal-1 {
+                        0% {
+                          -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                                  transform: rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                          -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                                  transform: rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                          -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                                  transform: rotate3d(1, 1, 0, -360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,42 @@
+@use "../base/variable";
+
+.row{
+    margin: 5px;
+    #principal {
+        div{
+            label{
+                color: variable.$colorletra;
+            }
+            p{
+                color: variable.$colorletra;
+            }
+            span{
+                color: variable.$colorletra;
+            }
+        }
+    }
+    .animacion {
+        -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse ;
+                animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse ;
+      }
+      @-webkit-keyframes slide-right {
+        0% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+        }
+        100% {
+          -webkit-transform: translateX(100px);
+                  transform: translateX(100px);
+        }
+      }
+      @keyframes slide-right {
+        0% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+        }
+        100% {
+          -webkit-transform: translateX(100px);
+                  transform: translateX(100px);
+        }
+      }
+}

@@ -1,0 +1,149 @@
+@use "../base/variable";
+@use "../base/globales";
+
+/** mobile **/
+#body__grid{
+    margin: 0px;
+    padding: 0%;
+    .head{
+        width: 100vw;
+        .head__nav{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            background-color: map-get(globales.$backgrand, bg-color );
+            background-image: map-get(globales.$backgrand, bg-image );
+            .head__nav__titulo{
+                text-align: center;
+                width: 100vw;
+                max-width: 768px;
+                min-width: 320px;
+                overflow: hidden;
+                position: relative;
+                box-sizing: border-box;
+                padding: 10px;
+                img{
+                    height: 250px;
+                    width: auto;
+                    border-radius: 50%;
+                    animation: rotate-scale-up-diag-1 3s linear both;
+                    }
+                    @keyframes rotate-scale-up-diag-1 {
+                        0% {
+                            transform: scale(.0.8) rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                            transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                            transform: scale(0.8) rotate3d(1, 1, 0, -360deg);
+                        }
+                        }
+                h1 {
+                    color: variable.$colorletra;
+                    font-family: variable.$tipoletra;
+                    font-size: variable.$tamanoh;
+                }
+                p{
+                    color: variable.$colorletra;
+                    font-family: variable.$tipoletra;
+                    font-size: (variable.$tamanoh)/2.5;  
+                }
+            }
+            .head__nav__link{
+                text-align: center;
+                max-width: 768px;
+                min-width: 320px;
+                ul li{
+                    list-style: none;
+                    padding: 5px;
+                    a{
+                        text-decoration: none;
+                        font-size: (variable.$tamanoh)/2;
+                        font-family: variable.$tipoletra;
+                        color: variable.$colorletra;
+                        &:hover{
+                            background-color: #0093E9;
+                            background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                            border-radius: 10%;
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+    //*  tablet - desktop*//
+            @media (min-width: 768px){
+                .head__nav__titulo{
+                    width: 100vw;
+                    max-width: 1200px;
+                    min-width: 768px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img{
+                        animation: rotate-scale-up-diag-1 3s linear both infinite;
+                    }
+                    @keyframes rotate-scale-up-diag-1 {
+                        0% {
+                            transform: scale(.5) rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                            transform: scale(0.8) rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                            transform: scale(0.5) rotate3d(1, 1, 0, -360deg);
+                        }
+                    }
+                    p{
+                        display: grid;
+                        align-items: flex-end;
+                        align-self: flex-end;
+                    }
+                    h1{
+                        font-size: (variable.$tamanoh)*1.1;
+                    }
+                }
+                .head__nav__link{
+                    justify-self: center;
+                    align-self: center;
+                    ul {
+                        li{
+                            float: right;
+                            margin-right: 20px;
+                            a:hover{
+                                background-color: #0093E9;
+                                background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                                border-radius: 10%;
+                                color: white;
+                                font-size: 25px;
+                            }
+                            -webkit-animation: rotate-vert-center 1.5s ;
+                                animation: rotate-vert-center 1.5s ;
+                            @-webkit-keyframes rotate-vert-center {
+                                0% {
+                                -webkit-transform: rotateY(0);
+                                        transform: rotateY(0);
+                                }
+                                100% {
+                                -webkit-transform: rotateY(360deg);
+                                        transform: rotateY(360deg);
+                                }
+                            }
+                            @keyframes rotate-vert-center {
+                                0% {
+                                -webkit-transform: rotateY(0);
+                                        transform: rotateY(0);
+                                }
+                                100% {
+                                -webkit-transform: rotateY(360deg);
+                                        transform: rotateY(360deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use "../base/variable";
+
+section{
+    h2{
+        text-align: variable.$center;
+        color: variable.$colortitulo;
+        font-size: (variable.$tamanoh)/1.5;
+        font-family: variable.$tipoletra;
+        padding: 10px;
+        button{
+            color: variable.$colortitulo;
+        }
+    }
+    p{
+        text-align: variable.$center;
+        color: variable.$colortitulo;
+        font-size: (variable.$tamanoh)/2;
+        font-family: variable.$tipoletra; 
+    }
+    .servicio{
+        width: 80vw;
+        max-width: 768px;
+        min-width: 320px;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+}
+.carrousel{
+    .tamanio_img{
+        width: 500px;
+        height: 380px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
