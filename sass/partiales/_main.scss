@@ -8,7 +8,7 @@
 
 /** mobile **/
 .main{
-    @include bg-main;
+    background-image: url(/img/img\ header.jpg);
     display: grid;
     width: 100vw;
     section{
