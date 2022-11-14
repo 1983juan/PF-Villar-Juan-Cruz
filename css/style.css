@@ -144,7 +144,8 @@
 
 /** mobile **/
 .main {
-  background-image: url(/img/img\ header.jpg);
+  background-image: url(../img/img\ header.jpg);
+  background-size: cover;
   display: grid;
   width: 100vw;
 }
@@ -302,7 +303,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "inicio" "redes";
-  background-image: url(/img/footer-redes-sociales.jpg);
+  background-image: url(../img/footer-redes-sociales.jpg);
   background-size: cover;
   opacity: 75%;
   width: 100vw;
@@ -519,6 +520,17 @@ section .servicio {
     -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
+}
+
+#carouselExampleControls .tamanio_img {
+  width: 500px;
+  height: 380px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#carouselExampleControls .tamanio_img img {
+  width: 100vw;
+  height: 100vw;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,10 @@
 @use "../base/variable";
 @use "../base/globales";
 
-@mixin bg-main {
-    background-image: url(/img/img\ header.jpg);
-    background-size: cover;  
-}
-
 /** mobile **/
 .main{
-    background-image: url(/img/img\ header.jpg);
+    background-image: url(../img/img\ header.jpg);
+    background-size: cover;
     display: grid;
     width: 100vw;
     section{
