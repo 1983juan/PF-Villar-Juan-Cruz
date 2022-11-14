@@ -303,7 +303,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "inicio" "redes";
-  background-image: url(/img/footer-redes-sociales.jpg);
+  background-image: url(../img/footer-redes-sociales.jpg);
   background-size: cover;
   opacity: 75%;
   width: 100vw;
