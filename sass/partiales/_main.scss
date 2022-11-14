@@ -3,38 +3,39 @@
 
 /** mobile **/
 .main{
-    background-image: url(/img/img\ header.jpg);
+    background-image: url(../img/img\ header.jpg);
     background-size: cover;
     display: grid;
-    width: 100vw;
     section{
         article{
+            width: 100vw;
+            max-width: 768px;
+            min-width: 320px;
             #imagen{
                 text-align: center;
                 width: 100vw;
-                max-width: 768px;
-                min-width: 320px;
                 overflow: hidden;
                 position: relative;
                 box-sizing: border-box;
-                padding: 10px;
                 grid-template-areas: 
                 "imagen"
                 "video";
-                grid-template-columns: auto;
+                grid-template-columns: 1fr;
                 grid-template-rows: auto auto;
+                margin: 5px;
                 img{
                     grid-area: imagen;
-                    width: 30vw;
+                    width: 50vw;
+                    height: auto;
                     padding: 10px;
                 }
                 video{
                     grid-area: video;
-                    width: 80%;
+                    width: 80vw;
+                    height: auto;
                     overflow: hidden;
                     position: relative;
                     box-sizing: border-box;
-                    padding: 10px; 
                 }
             }
             #resert{
@@ -91,59 +92,99 @@
     //*  tablet - desktop*//
 
 
-    @media (min-width: 768px) {
-        #imagen{
-            display: flex;
+@media (min-width: 768px) {
+    .main{
+        article{
             width: 100vw;
             max-width: 1200px;
             min-width: 768px;
-            height:auto;
-            justify-content: center;
-            align-content: center;
-            img{
-                width: 50px;
-                justify-self: center;
-                align-self: center;
-                margin: 30px;
-                -webkit-animation: rotate-diagonal-1 1.5s linear both;
-            animation: rotate-diagonal-1 1.5s linear both;
+
+            #imagen{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                margin: 10px;
+                background-color: black;
+                img{
+                    -webkit-animation: rotate-diagonal-1 1.5s linear both;
+                    animation: rotate-diagonal-1 1.5s linear both;
+                }
+                @-webkit-keyframes rotate-diagonal-1 {
+                    0% {
+                    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                            transform: rotate3d(1, 1, 0, 0deg);
+                    }
+                    50% {
+                    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                            transform: rotate3d(1, 1, 0, -180deg);
+                    }
+                    100% {
+                    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                            transform: rotate3d(1, 1, 0, -360deg);
+                    }
+                }
+                @keyframes rotate-diagonal-1 {
+                    0% {
+                    -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                            transform: rotate3d(1, 1, 0, 0deg);
+                    }
+                    50% {
+                    -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                            transform: rotate3d(1, 1, 0, -180deg);
+                    }
+                    100% {
+                    -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                            transform: rotate3d(1, 1, 0, -360deg);
+                    }
+                }
+                video{
+                    width: 100px;
+                }
             }
-            @-webkit-keyframes rotate-diagonal-1 {
-                0% {
-                -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                        transform: rotate3d(1, 1, 0, 0deg);
+            #resert{
+                width: 100vw;
+                max-width: 1200px;
+                min-width: 768px;
+                button{
+                    grid-area: button;
+                    align-self: center;
+                    justify-self: center;
+                    text-align: center;
+                    padding: 5px;
+                    margin-top: 10px;
+                    width: 140px;
+                    height: 40px;
+                    font-size: (variable.$tamanoh)/3;
+                    font-family: variable.$tipoletra;
+                    border-bottom: map-get(globales.$boton , border-bottom );
+                    border-radius: map-get(globales.$boton , border-radis);
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: map-get(globales.$boton , border-radius );
+                        font-size: (variable.$tamanoh)/1.6;
+                    }
                 }
-                50% {
-                -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                        transform: rotate3d(1, 1, 0, -180deg);
+                a{
+                    grid-area: a;
+                    width: 50vw;
+                    padding: 10px;
+                    justify-self: center;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: (variable.$tamanoh)/2;
+                    font-family: variable.$tipoletra;
+                    color: rgb(220, 96, 30);
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        color: white;
+                        font-size: 25px;
+                    }
                 }
-                100% {
-                -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                        transform: rotate3d(1, 1, 0, -360deg);
-                }
-            }
-            @keyframes rotate-diagonal-1 {
-                0% {
-                -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                        transform: rotate3d(1, 1, 0, 0deg);
-                }
-                50% {
-                -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                        transform: rotate3d(1, 1, 0, -180deg);
-                }
-                100% {
-                -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                        transform: rotate3d(1, 1, 0, -360deg);
-                }
-            }
-            .imagen__video{
-                justify-self: center;
-                align-self: center;
             }
         }
     }
-
-
-/** tarifas **/
-
-
+}
