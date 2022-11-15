@@ -11,13 +11,12 @@
     background-color: map-get(globales.$backgrand, bg-color );
     background-image: map-get(globales.$backgrand, bg-image );
     width: 100vw;
+    min-width: 320px;
     margin: 0px;
     padding: 0%;
     .footer__p{
         grid-area: p;
         width: 100vw;
-        max-width: 768px;
-        min-width: 320px;
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
@@ -40,17 +39,14 @@
         background-size: cover;
         opacity: 75%;
         width: 100vw;
-        max-width: 768px;
-        min-width: 320px;
         overflow: hidden;
         position: relative;
         box-sizing: border-box; 
-        border-radius: map-get(globales.$backgrand, b-radius )*20;
+        border-radius: map-get(globales.$backgrand, b-radius )*10;
         .car{
             grid-area: inicio;
             text-align: center;
             width: 100vw;
-            max-width: 768px;
             min-width: 320px;
             button{
                 font-size: (variable.$tamanoh)/3;
@@ -75,12 +71,10 @@
             grid-area: redes;
             text-align: center;
             width: 100vw;
-            max-width: 768px;
             min-width: 320px;
             ul li{
                 list-style: none;
                 padding: 2px;
-                
                 a img{
                     overflow: hidden;
                     position: relative;
@@ -98,12 +92,8 @@
     #footer {
         height: auto;
         width: 100vw;
-        max-width: 1200px;
-        min-width: 768px;
-        overflow: hidden;
         position: relative;
         box-sizing: border-box;
-        background-color: black;
         .footer__p{
             justify-self: center;
             align-self: center;
@@ -145,7 +135,6 @@
             }
             .footer__div__a{
                 width: 20vw;
-                height: 20vw;
                 ul li {
                     float: right;
                     display: flex;

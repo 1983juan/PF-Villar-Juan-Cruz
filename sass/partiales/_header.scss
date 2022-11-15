@@ -4,23 +4,17 @@
 /** mobile **/
 #body__grid{
     margin: 0px;
-    padding: 0%;
+    padding: auto;
     .head{
         width: 100vw;
         .head__nav{
             display: grid;
-            grid-template-columns: auto;
+            grid-template-columns: 1fr;
             grid-template-rows: auto auto;
             background-color: map-get(globales.$backgrand, bg-color );
             background-image: map-get(globales.$backgrand, bg-image );
             .head__nav__titulo{
                 text-align: center;
-                width: 100vw;
-                max-width: 768px;
-                min-width: 320px;
-                overflow: hidden;
-                position: relative;
-                box-sizing: border-box;
                 padding: 10px;
                 img{
                     height: 250px;
@@ -47,7 +41,7 @@
                 p{
                     color: variable.$colorletra;
                     font-family: variable.$tipoletra;
-                    font-size: (variable.$tamanoh)/2.5;  
+                    font-size: (variable.$tamanoh)/2.5;
                 }
             }
             .head__nav__link{
@@ -74,10 +68,9 @@
             }
     //*  tablet - desktop*//
             @media (min-width: 768px){
+
                 .head__nav__titulo{
                     width: 100vw;
-                    max-width: 1200px;
-                    min-width: 768px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;

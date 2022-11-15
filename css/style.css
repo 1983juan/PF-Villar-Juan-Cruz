@@ -1,26 +1,20 @@
 /** mobile **/
 #body__grid {
   margin: 0px;
-  padding: 0%;
+  padding: auto;
 }
 #body__grid .head {
   width: 100vw;
 }
 #body__grid .head .head__nav {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
 }
 #body__grid .head .head__nav .head__nav__titulo {
   text-align: center;
-  width: 100vw;
-  max-width: 768px;
-  min-width: 320px;
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
   padding: 10px;
 }
 #body__grid .head .head__nav .head__nav__titulo img {
@@ -75,8 +69,6 @@
 @media (min-width: 768px) {
   #body__grid .head .head__nav .head__nav__titulo {
     width: 100vw;
-    max-width: 1200px;
-    min-width: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,10 +139,10 @@
   background-image: url(../img/img\ header.jpg);
   background-size: cover;
   display: grid;
+  width: 100vw;
 }
 .main section article {
   width: 100vw;
-  max-width: 768px;
   min-width: 320px;
   margin-right: 20px;
 }
@@ -247,7 +239,6 @@
   }
   .main article {
     width: 100vw;
-    max-width: 1200px;
     min-width: 768px;
   }
   .main article #imagen {
@@ -293,7 +284,6 @@
   }
   .main article #resert {
     width: 100vw;
-    max-width: 1200px;
     min-width: 768px;
   }
   .main article #resert button {
@@ -342,14 +332,13 @@
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
   width: 100vw;
+  min-width: 320px;
   margin: 0px;
   padding: 0%;
 }
 #footer .footer__p {
   grid-area: p;
   width: 100vw;
-  max-width: 768px;
-  min-width: 320px;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
@@ -370,18 +359,15 @@
   background-size: cover;
   opacity: 75%;
   width: 100vw;
-  max-width: 768px;
-  min-width: 320px;
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  border-radius: 40%;
+  border-radius: 20%;
 }
 #footer .footer__div .car {
   grid-area: inicio;
   text-align: center;
   width: 100vw;
-  max-width: 768px;
   min-width: 320px;
 }
 #footer .footer__div .car button {
@@ -406,7 +392,6 @@
   grid-area: redes;
   text-align: center;
   width: 100vw;
-  max-width: 768px;
   min-width: 320px;
 }
 #footer .footer__div .footer__div__a ul li {
@@ -426,12 +411,8 @@
   #footer {
     height: auto;
     width: 100vw;
-    max-width: 1200px;
-    min-width: 768px;
-    overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    background-color: black;
   }
   #footer .footer__p {
     justify-self: center;
@@ -474,7 +455,6 @@
   }
   #footer .footer__div .footer__div__a {
     width: 20vw;
-    height: 20vw;
   }
   #footer .footer__div .footer__div__a ul li {
     float: right;
