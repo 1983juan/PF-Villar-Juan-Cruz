@@ -11,6 +11,7 @@
             width: 100vw;
             max-width: 768px;
             min-width: 320px;
+            margin-right: 20px;
             #imagen{
                 text-align: center;
                 width: 100vw;
@@ -25,13 +26,14 @@
                 margin: 5px;
                 img{
                     grid-area: imagen;
-                    width: 50vw;
+                    width: 30vw;
                     height: auto;
+                    margin: 20px;
                     padding: 10px;
                 }
                 video{
                     grid-area: video;
-                    width: 80vw;
+                    width: 65vw;
                     height: auto;
                     overflow: hidden;
                     position: relative;
@@ -94,97 +96,112 @@
 
 @media (min-width: 768px) {
     .main{
-        article{
-            width: 100vw;
-            max-width: 1200px;
-            min-width: 768px;
-
-            #imagen{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 80vw;
-                margin: 10px;
-                background-color: black;
-                img{
-                    -webkit-animation: rotate-diagonal-1 1.5s linear both;
-                    animation: rotate-diagonal-1 1.5s linear both;
-                }
-                @-webkit-keyframes rotate-diagonal-1 {
-                    0% {
-                    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                            transform: rotate3d(1, 1, 0, 0deg);
-                    }
-                    50% {
-                    -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                            transform: rotate3d(1, 1, 0, -180deg);
-                    }
-                    100% {
-                    -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                            transform: rotate3d(1, 1, 0, -360deg);
-                    }
-                }
-                @keyframes rotate-diagonal-1 {
-                    0% {
-                    -webkit-transform: rotate3d(1, 1, 0, 0deg);
-                            transform: rotate3d(1, 1, 0, 0deg);
-                    }
-                    50% {
-                    -webkit-transform: rotate3d(1, 1, 0, -180deg);
-                            transform: rotate3d(1, 1, 0, -180deg);
-                    }
-                    100% {
-                    -webkit-transform: rotate3d(1, 1, 0, -360deg);
-                            transform: rotate3d(1, 1, 0, -360deg);
-                    }
-                }
-                video{
-                    width: 100px;
-                }
+        -webkit-animation: bg-pan-bl 8s both;
+        animation: bg-pan-bl 8s both;
+        @-webkit-keyframes bg-pan-bl {
+            0% {
+              background-position: 100% 0%;
             }
-            #resert{
+            100% {
+              background-position: 0% 100%;
+            }
+          }
+          @keyframes bg-pan-bl {
+            0% {
+              background-position: 100% 0%;
+            }
+            100% {
+              background-position: 0% 100%;
+            }
+          }
+            article{
                 width: 100vw;
                 max-width: 1200px;
                 min-width: 768px;
-                button{
-                    grid-area: button;
-                    align-self: center;
-                    justify-self: center;
-                    text-align: center;
-                    padding: 5px;
-                    margin-top: 10px;
-                    width: 140px;
-                    height: 40px;
-                    font-size: (variable.$tamanoh)/3;
-                    font-family: variable.$tipoletra;
-                    border-bottom: map-get(globales.$boton , border-bottom );
-                    border-radius: map-get(globales.$boton , border-radis);
-                    &:hover{
-                        background-color: #0093E9;
-                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
-                        border-radius: map-get(globales.$boton , border-radius );
-                        font-size: (variable.$tamanoh)/1.6;
+                #imagen{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        -webkit-animation: rotate-diagonal-1 1.5s linear both;
+                        animation: rotate-diagonal-1 1.5s linear both;
+                    }
+                    @-webkit-keyframes rotate-diagonal-1 {
+                        0% {
+                        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                                transform: rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                                transform: rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                                transform: rotate3d(1, 1, 0, -360deg);
+                        }
+                    }
+                    @keyframes rotate-diagonal-1 {
+                        0% {
+                        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+                                transform: rotate3d(1, 1, 0, 0deg);
+                        }
+                        50% {
+                        -webkit-transform: rotate3d(1, 1, 0, -180deg);
+                                transform: rotate3d(1, 1, 0, -180deg);
+                        }
+                        100% {
+                        -webkit-transform: rotate3d(1, 1, 0, -360deg);
+                                transform: rotate3d(1, 1, 0, -360deg);
+                        }
+                    }
+                    video{
+                        width: 100px;
+                        padding-right: 10px;
                     }
                 }
-                a{
-                    grid-area: a;
-                    width: 50vw;
-                    padding: 10px;
-                    justify-self: center;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: (variable.$tamanoh)/2;
-                    font-family: variable.$tipoletra;
-                    color: rgb(220, 96, 30);
-                    &:hover{
-                        background-color: #0093E9;
-                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
-                        border-radius: 5%;
-                        color: white;
-                        font-size: 25px;
+                #resert{
+                    width: 100vw;
+                    max-width: 1200px;
+                    min-width: 768px;
+                    button{
+                        grid-area: button;
+                        align-self: center;
+                        justify-self: center;
+                        text-align: center;
+                        padding: 5px;
+                        margin-top: 10px;
+                        width: 140px;
+                        height: 40px;
+                        font-size: (variable.$tamanoh)/3;
+                        font-family: variable.$tipoletra;
+                        border-bottom: map-get(globales.$boton , border-bottom );
+                        border-radius: map-get(globales.$boton , border-radis);
+                        &:hover{
+                            background-color: #0093E9;
+                            background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                            border-radius: map-get(globales.$boton , border-radius );
+                            font-size: (variable.$tamanoh)/1.6;
+                        }
+                    }
+                    a{
+                        grid-area: a;
+                        width: 50vw;
+                        padding: 10px;
+                        justify-self: center;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: (variable.$tamanoh)/2;
+                        font-family: variable.$tipoletra;
+                        color: rgb(220, 96, 30);
+                        &:hover{
+                            background-color: #0093E9;
+                            background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                            border-radius: 5%;
+                            color: white;
+                            font-size: 25px;
+                        }
                     }
                 }
-            }
-        }
+            } 
     }
 }

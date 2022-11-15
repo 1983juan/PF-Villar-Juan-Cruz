@@ -152,6 +152,7 @@
   width: 100vw;
   max-width: 768px;
   min-width: 320px;
+  margin-right: 20px;
 }
 .main section article #imagen {
   text-align: center;
@@ -166,13 +167,14 @@
 }
 .main section article #imagen img {
   grid-area: imagen;
-  width: 50vw;
+  width: 30vw;
   height: auto;
+  margin: 20px;
   padding: 10px;
 }
 .main section article #imagen video {
   grid-area: video;
-  width: 80vw;
+  width: 65vw;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -223,6 +225,26 @@
 }
 
 @media (min-width: 768px) {
+  .main {
+    -webkit-animation: bg-pan-bl 8s both;
+    animation: bg-pan-bl 8s both;
+  }
+  @-webkit-keyframes bg-pan-bl {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  @keyframes bg-pan-bl {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
   .main article {
     width: 100vw;
     max-width: 1200px;
@@ -232,9 +254,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    margin: 10px;
-    background-color: black;
   }
   .main article #imagen img {
     -webkit-animation: rotate-diagonal-1 1.5s linear both;
@@ -270,6 +289,7 @@
   }
   .main article #imagen video {
     width: 100px;
+    padding-right: 10px;
   }
   .main article #resert {
     width: 100vw;
