@@ -498,7 +498,6 @@ section h2 {
   color: rgb(110, 248, 229);
   font-size: 26.6666666667px;
   font-family: "Fuzzy Bubbles", cursive;
-  padding: 10px;
 }
 section h2 button {
   color: rgb(110, 248, 229);
@@ -516,12 +515,11 @@ section .servicio {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  justify-content: center;
 }
 
 .carrousel .tamanio_img {
-  width: 500px;
-  height: 380px;
+  width: 50vw;
+  height: 30vw;
   margin-top: 5px;
   margin-bottom: 10px;
 }

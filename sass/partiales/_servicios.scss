@@ -6,7 +6,6 @@ section{
         color: variable.$colortitulo;
         font-size: (variable.$tamanoh)/1.5;
         font-family: variable.$tipoletra;
-        padding: 10px;
         button{
             color: variable.$colortitulo;
         }
@@ -24,13 +23,12 @@ section{
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
-        justify-content: center;
     }
 }
 .carrousel{
     .tamanio_img{
-        width: 500px;
-        height: 380px;
+        width: 50vw;
+        height: 30vw;
         margin-top: 5px;
         margin-bottom: 10px;
     }
