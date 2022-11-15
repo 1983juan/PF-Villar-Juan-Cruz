@@ -136,7 +136,7 @@
 
 /** mobile **/
 .main {
-  background-image: url(../img/img\header.jpg);
+  background-image: url(../img/imgheader.jpg);
   background-size: cover;
   display: grid;
   width: 100vw;
