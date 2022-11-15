@@ -110,7 +110,7 @@
             .car{
                 display: flex;
                 justify-content:right;
-                width: 25vw;
+                width: 50vw;
                 height: 5vw;
                 button {
                     text-align: center;
@@ -134,14 +134,12 @@
                 }
             }
             .footer__div__a{
-                width: 20vw;
+                width: 100vw;
                 ul li {
-                    float: right;
-                    display: flex;
+                    display: inline-block;
                     align-self: center;
                     justify-content: center;
                     margin-top: 10px;
-                    width: 50px;
                     -webkit-animation: rotate-diagonal-1 1.5s linear both;
                         animation: rotate-diagonal-1 1.5s linear both;
                       }
