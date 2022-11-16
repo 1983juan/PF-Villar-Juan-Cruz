@@ -401,7 +401,7 @@
 @media (min-width: 768px) and (min-width: 1200px) {
   .main section article {
     width: 100vw;
-    min-width: 768px;
+    min-width: 1200px;
     margin: 25px;
   }
   .main section article #imagen {
@@ -411,6 +411,7 @@
   }
   .main section article #imagen img {
     width: 20vw;
+    border: 5px solid rgb(9, 83, 52);
     -webkit-animation: rotate-diagonal-1 1.5s linear both;
     animation: rotate-diagonal-1 1.5s linear both;
   }
@@ -444,7 +445,8 @@
   }
   .main section article #imagen video {
     width: 60vw;
-    padding-right: 10px;
+    padding: 10px;
+    border: 5px solid rgb(9, 83, 52);
   }
 }
 #footer {
