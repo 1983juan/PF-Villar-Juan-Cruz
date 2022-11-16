@@ -1,8 +1,7 @@
 
-@mixin menu ($color, $tamano, $padding) {
-    text-decoration: $color;
-    font-size: $tamano;
-    padding: $padding;
+@mixin menu ($ancho, $alto, $padding) {
+   width: $ancho;
+   height: $alto;
 }
 
 $boton:(

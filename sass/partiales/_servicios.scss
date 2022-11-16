@@ -1,4 +1,10 @@
 @use "../base/variable";
+@use "../base/globales";
+
+@mixin menu($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+ }
 
 section{
     h2{
@@ -27,8 +33,7 @@ section{
 }
 .carrousel{
     .tamanio_img{
-        width: 52vw;
-        height: 30vw;
+        @include menu (52vw, 30vw);
         margin-top: 5px;
         margin-bottom: 10px;
     }
