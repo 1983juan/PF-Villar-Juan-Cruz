@@ -3,7 +3,7 @@
 
 /** mobile **/
 .main{
-    background-image: url(../img/img\ header.jpg);
+    background-image: map-get(globales.$backgrand, bg-main );
     background-size: cover;
     display: grid;
     width: 100vw;
