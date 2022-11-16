@@ -66,6 +66,12 @@ body{
                             color: white;
                             font-size: 25px;
                         }
+                        @for $item from 1 through 4 {
+                            .menu__item:nth-child(#{$item}){
+                                animation-delay: $item*0.2s;
+                            }
+                            
+                        }
                     }
                 }
             }
