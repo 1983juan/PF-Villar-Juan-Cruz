@@ -1,6 +1,10 @@
 @use "../base/variable";
 @use "../base/globales";
 
+@mixin menu($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+ }
 /** mobile **/
 body{
     margin: 0%;
@@ -19,8 +23,7 @@ body{
                 text-align: center;
                 padding: 10px;
                 img{
-                    height: 250px;
-                    width: auto;
+                    @include menu(250px, auto );
                     border-radius: 50%;
                     animation: rotate-scale-up-diag-1 3s linear both;
                     }
@@ -78,7 +81,7 @@ body{
         //*  tablet - desktop*//
             @media (min-width: 768px){
                 .head__nav__titulo{
-                    width: 100vw;
+                    @include menu(100vw,auto );
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -150,16 +153,16 @@ body{
             //* vista desktop *//
 
             @media (min-width: 1200px){
-                width: 100vw;
+                @include menu(100vw, auto);
                 max-width: 100vw;
         
                 .head__nav__titulo{
-                    width: 100vw;
+                    @include menu(100vw, auto);
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     img{
-                        width: 15vw;
+                        @include menu(15vw, auto);
                         animation: rotate-scale-up-diag-1 3s linear both infinite;
                     }
                     @keyframes rotate-scale-up-diag-1 {
