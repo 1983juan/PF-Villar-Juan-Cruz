@@ -95,6 +95,7 @@
 
 @media (min-width: 768px) {
     .main{
+        width: 100vw;
         -webkit-animation: bg-pan-bl 8s both;
         animation: bg-pan-bl 8s both;
         @-webkit-keyframes bg-pan-bl {
