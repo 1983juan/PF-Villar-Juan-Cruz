@@ -647,22 +647,6 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
     }
   }
 }
-.liwhite {
-  background-color: white;
-}
-
-.lired {
-  background-color: red;
-}
-
-.liyellow {
-  background-color: yellow;
-}
-
-.liorange {
-  background-color: orange;
-}
-
 section h2 {
   text-align: center;
   color: rgb(110, 248, 229);
@@ -694,6 +678,20 @@ section .servicio {
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .liwhite {
+    background-color: white;
+  }
+  .lired {
+    background-color: red;
+  }
+  .liyellow {
+    background-color: yellow;
+  }
+  .liorange {
+    background-color: orange;
+  }
+}
 .row {
   margin: 5px;
 }
