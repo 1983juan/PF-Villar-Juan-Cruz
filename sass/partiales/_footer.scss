@@ -54,12 +54,14 @@
                 border-bottom: 8px solid rgb(56, 101, 116);
                 border-radius: 5%;
                 margin: 10px;
+                background-color: #0093E9;
+                background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
                 a{
                     justify-self: center;
                     font-family: variable.$tipoletra;              
                     text-align: center;
                     &:hover{
-                        background-color: #0093E9;
+                        background-color: #295c7a;
                         background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
                         border-radius: 5%;
                         font-size: 20px;

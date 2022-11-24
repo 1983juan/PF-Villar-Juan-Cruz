@@ -287,6 +287,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
   font-size: 13.3333333333px;
   font-family: "Fuzzy Bubbles", cursive;
   border-bottom: 8px solid rgb(56, 101, 116);
+  background-color: #668191;
 }
 .main section article #resert button:hover {
   background-color: #0093E9;
@@ -294,7 +295,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
   border-radius: 5%;
   font-size: 25px;
 }
-.main section article #resert a {
+.main section article #resert .resertuno {
   grid-area: a;
   width: 50vw;
   padding: 10px;
@@ -303,13 +304,12 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
   text-decoration: none;
   font-size: 20px;
   font-family: "Fuzzy Bubbles", cursive;
-  color: rgb(220, 96, 30);
+  color: rgb(252, 251, 250);
 }
-.main section article #resert a:hover {
+.main section article #resert .resertuno:hover {
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
   border-radius: 5%;
-  color: white;
   font-size: 25px;
 }
 
@@ -398,6 +398,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
     font-size: 13.3333333333px;
     font-family: "Fuzzy Bubbles", cursive;
     border-bottom: 8px solid rgb(56, 101, 116);
+    background-color: #0093E9;
   }
   .main section article #resert button:hover {
     background-color: #0093E9;
@@ -405,7 +406,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
     border-radius: 5%;
     font-size: 25px;
   }
-  .main section article #resert a {
+  .main section article #resert .resertuno {
     grid-area: a;
     width: 50vw;
     padding: 10px;
@@ -416,7 +417,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
     font-family: "Fuzzy Bubbles", cursive;
     color: rgb(220, 96, 30);
   }
-  .main section article #resert a:hover {
+  .main section article #resert .resertuno:hover {
     background-color: #0093E9;
     background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
     border-radius: 5%;
@@ -527,6 +528,8 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
   border-bottom: 8px solid rgb(56, 101, 116);
   border-radius: 5%;
   margin: 10px;
+  background-color: #0093E9;
+  background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
 }
 #footer .footer__div .car button a {
   justify-self: center;
@@ -534,7 +537,7 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
   text-align: center;
 }
 #footer .footer__div .car button a:hover {
-  background-color: #0093E9;
+  background-color: #295c7a;
   background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
   border-radius: 5%;
   font-size: 20px;

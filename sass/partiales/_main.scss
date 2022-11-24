@@ -60,6 +60,7 @@
                     font-family: variable.$tipoletra;
                     border-bottom: map-get(globales.$boton , border-bottom );
                     border-radius: map-get(globales.$boton , border-radis);
+                    background-color: #668191;
                     &:hover{
                         background-color: #0093E9;
                         background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
@@ -67,7 +68,7 @@
                         font-size: (variable.$tamanoh)/1.6;
                     }
                 }
-                a{
+                .resertuno{
                     grid-area: a;
                     width: 50vw;
                     padding: 10px;
@@ -76,12 +77,11 @@
                     text-decoration: none;
                     font-size: (variable.$tamanoh)/2;
                     font-family: variable.$tipoletra;
-                    color: rgb(220, 96, 30);
+                    color: rgb(252, 251, 250);
                     &:hover{
                         background-color: #0093E9;
                         background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
                         border-radius: 5%;
-                        color: white;
                         font-size: 25px;
                     }
                 }
@@ -177,6 +177,7 @@
                         font-family: variable.$tipoletra;
                         border-bottom: map-get(globales.$boton , border-bottom );
                         border-radius: map-get(globales.$boton , border-radis);
+                        background-color: #0093E9;
                         &:hover{
                             background-color: #0093E9;
                             background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
@@ -184,7 +185,7 @@
                             font-size: (variable.$tamanoh)/1.6;
                         }
                     }
-                    a{
+                    .resertuno{
                         grid-area: a;
                         width: 50vw;
                         padding: 10px;
