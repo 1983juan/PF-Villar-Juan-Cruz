@@ -550,14 +550,14 @@ body .head .head__nav .head__nav__link ul li a .menu__item:nth-child(4) {
 }
 #footer .footer__div .footer__div__a ul li {
   list-style: none;
-  padding: 2px;
+  padding: 1px;
 }
 #footer .footer__div .footer__div__a ul li a img {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   margin-right: 30px;
 }
 
