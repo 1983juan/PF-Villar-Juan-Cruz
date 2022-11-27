@@ -6,8 +6,6 @@
     height: $alto;
  }
 
- //* each *//
-
 section{
     h2{
         text-align: variable.$center;
@@ -40,6 +38,9 @@ section{
         margin-bottom: 10px;
     }
 }
+
+ //* each *//
+
 @media (min-width: 768px){
     @each $color in white, red,  yellow, orange,{
         .li#{$color} {
